@@ -1,0 +1,72 @@
+.cuad {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.cuadradito {
+    /* la clase es cuadradito, pero el nombre de la animación es cuadrado */
+    animation-name: cuadradoAnim;
+    /* necesitamos saber cuánto dura! */
+    animation-duration: 3s;
+}
+
+@keyframes cuadradoAnim {
+    from {
+        background-color: blueviolet;
+    }
+    to {
+        background-color: burlywood;
+    }
+}
+
+/* ///////// */
+
+.cuadradito2 {
+    animation-name: cuadradoAnim2;
+    animation-duration: 5s;
+}
+
+@keyframes cuadradoAnim2 {
+    0% {
+        background-color: blueviolet;
+    }
+    33% {
+        background-color: cyan;
+        width: 100%;
+    }
+    50% {
+        background-color: darkorange;
+        width: 20%;
+    }
+}
+
+/* ///////// */
+
+.cuadradito3 {
+    animation-name: cuadradoAnim2;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.cuadradito4 {
+    animation-name: cuadradoAnim2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.cuadradito5 {
+    animation-name: cuadradoLogo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in; 
+}
+
+@keyframes cuadradoLogo {
+    from {
+        background-color: darkviolet;
+    }
+    to {
+        background-color: forestgreen;
+    }
+}
